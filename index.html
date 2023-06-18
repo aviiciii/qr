@@ -27,36 +27,52 @@
 
 </head>
 <body>
-    <h1>QR</h1>
+    <div class="heading">
+        <h1>QR</h1>
+    </div>
     <!-- https://goqr.me/api/ -->
 
     <div class="form" >
         <form>
-            <!-- Email input -->
+            <!-- data  -->
             <div class="form-outline mb-4">
-              <input type="email" id="form1Example1" class="form-control" />
+              <input type="text" id="form1Example1" class="form-control" required/>
               <label class="form-label" for="form1Example1">Data</label>
             </div>
           
-            <!-- Password input -->
+            <!-- size  -->
             <div class="form-outline mb-4">
-              <input type="password" id="form1Example2" class="form-control" />
+              <input type="number" id="form1Example2" class="form-control" value="200" min="10" max="1000" />
               <label class="form-label" for="form1Example2">Size(AxA):</label>
             </div>
             
-            <!-- Email input -->
+            <!-- ecc  -->
             <div class="form-outline mb-4">
-                <input type="email" id="form1Example1" class="form-control" />
-                <label class="form-label" for="form1Example1">ECC (Redundancy)</label>
+                <label class="form-label" for="form1Example2">ECC (Redundancy):</label>
+            
+                <div class="btn-group">
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked />
+                    <label class="btn btn-secondary" for="option1">L</label>
+                  
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option2">M</label>
+                  
+                    <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option3">Q</label>
+
+                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option4">H</label>
+                </div>
             </div>
             
-            <!-- Password input -->
+            
+            <!-- color  -->
             <div class="form-outline mb-4">
                 <input type="color" id="form1Example2" class="form-control" />
                 <label class="form-label" for="form1Example2">Color</label>
             </div>
 
-            <!-- Email input -->
+            <!-- bg-color  -->
             <div class="form-outline mb-4">
                 <input type="color" id="form1Example1" class="form-control" />
                 <label class="form-label" for="form1Example1">Bg Color</label>
