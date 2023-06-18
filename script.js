@@ -2,35 +2,28 @@ addEventListener("DOMContentLoaded", function() {
     
 
 
-    // get submit button
-    const submit = document.getElementById("submit");
-    // add event listener to submit button
-    submit.addEventListener("click", function() {
-        console.log("submit button clicked");
-        // get input value
-        const input = document.getElementById("input").value;
-        
-        console.log(input);
+    // check for form submission
+    document.getElementById("qr-form").addEventListener("submit", function(e) {
+        // prevent default form submission
+        e.preventDefault();
 
-        // add qr to output
-        const output = document.getElementById("output");
+        // get form data
+        var formdata = new FormData(this);
 
-        // clear output
-        output.innerHTML = "";
+        // convert colors to hex
+        formdata.set("bgcolor", formdata.get("bgcolor").replace("#", ""));
+        formdata.set("color", formdata.get("color").replace("#", ""));
 
-        // create qr code
-        qr_src = `https://api.qrserver.com/v1/create-qr-code/?data=${input}&amp;size=100x100`
+        // form url
+        var url = "https://api.qrserver.com/v1/create-qr-code/";
 
-        // create img element
-        const img = document.createElement("img");
-        img.src = qr_src;
-        img.alt = "QR Code";
+        // fetch url using parameters
+        var img_src= url + "?" + new URLSearchParams(formdata);
 
-        // append img to output
-        output.appendChild(img);
+        console.log(img_src);
 
-        // clear input
-        document.getElementById("input").value = "";
+        // display image
+        document.getElementById("qr-img").src = img_src;
 
 
     });

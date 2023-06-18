@@ -33,7 +33,7 @@
     <!-- https://goqr.me/api/ -->
 
     <div class="form">
-        <form>
+        <form id="qr-form">
             <!-- data  -->
             <div class="form-outline mb-4">
               <input type="text" name="data" class="form-control" required/>
@@ -54,8 +54,8 @@
 
             <!-- Quiet Zone -->
             <div class="form-outline mb-4">
-                <input type="email" name="quietzone" class="form-control active" value="4" min="0" max="100" />
-                <label class="form-label" for="quietzone">Quiet Zone</label>
+                <input type="number" name="qzone" class="form-control active" value="4" min="0" max="100" />
+                <label class="form-label" for="qzone">Quiet Zone</label>
             </div>
             
             <!-- ecc  -->
@@ -104,6 +104,12 @@
             </div>
           
         </form>
+    </div>
+
+    <div class="output">
+        <div id="qr-result" class="mb-4">
+            <img id="qr-img"class="img-fluid" src="" alt="">
+        </div>
     </div>
     
     
