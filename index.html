@@ -4,20 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR</title>
+
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+    rel="stylesheet"
+    />
+
+
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
     <h1>QR</h1>
     <!-- https://goqr.me/api/ -->
-   
-    <input type="text" name="text" id="input" placeholder="Text">
-    <input id="submit" type="submit" value="Generate">
-    
-    <br>
-    <div class="output" id="output">
 
+    <div class="form" >
+        <form>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form1Example1" class="form-control" />
+              <label class="form-label" for="form1Example1">Data</label>
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="form1Example2" class="form-control" />
+              <label class="form-label" for="form1Example2">Size(AxA):</label>
+            </div>
+            
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form1Example1" class="form-control" />
+                <label class="form-label" for="form1Example1">ECC (Redundancy)</label>
+            </div>
+            
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <input type="color" id="form1Example2" class="form-control" />
+                <label class="form-label" for="form1Example2">Color</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="color" id="form1Example1" class="form-control" />
+                <label class="form-label" for="form1Example1">Bg Color</label>
+            </div>
+            
+            <!-- Margin -->
+            <div class="form-outline mb-4">
+                <input type="number" id="form1Example1" class="form-control" />
+                <label class="form-label" for="form1Example1">Margin</label>
+            </div>
+
+            <!-- Quiet Zone -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form1Example1" class="form-control" />
+                <label class="form-label" for="form1Example1">Quiet Zone</label>
+            </div>
+
+            <!-- Format -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form1Example1" class="form-control" />
+                <label class="form-label" for="form1Example1">Format</label>
+            </div>
+
+              
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block">Generate</button>
+          </form>
     </div>
+    
+    
 
     <!-- script -->
     <script src="script.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
 </body>
 </html>
