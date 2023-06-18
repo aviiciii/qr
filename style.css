@@ -8,3 +8,12 @@
     margin: 0 auto;
     padding: 80px;
 }
+
+.color{
+    width: 100px;
+    height: 40px;
+}
+
+.color input{
+    height: 36px;
+}
