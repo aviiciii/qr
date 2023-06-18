@@ -32,38 +32,38 @@
     </div>
     <!-- https://goqr.me/api/ -->
 
-    <div class="form" >
+    <div class="form">
         <form>
             <!-- data  -->
             <div class="form-outline mb-4">
-              <input type="text" id="form1Example1" class="form-control" required/>
+              <input type="text" name="data" class="form-control" required/>
               <label class="form-label" for="form1Example1">Data</label>
             </div>
           
             <!-- size  -->
             <div class="form-outline mb-4">
-              <input type="number" id="form1Example2" class="form-control" value="200" min="10" max="1000" />
+              <input type="number" name="size" class="form-control" value="200" min="10" max="1000" />
               <label class="form-label" for="form1Example2">Size(AxA):</label>
             </div>
 
             <!-- Margin -->
             <div class="form-outline mb-4">
-                <input type="number" id="margin" class="form-control active" value="10" min="0" max="50" />
+                <input type="number" name="margin" class="form-control active" value="10" min="0" max="50" />
                 <label class="form-label" for="margin">Margin</label>
             </div>
 
             <!-- Quiet Zone -->
             <div class="form-outline mb-4">
-                <input type="email" id="quietzone" class="form-control active" value="4" min="0" max="100" />
+                <input type="email" name="quietzone" class="form-control active" value="4" min="0" max="100" />
                 <label class="form-label" for="quietzone">Quiet Zone</label>
             </div>
             
             <!-- ecc  -->
             <div class="form-outline mb-4">
-                <label class="form-label" for="form1Example2">ECC (Redundancy):</label>
+                <label class="form-label" for="ecc">ECC (Redundancy):</label>
             
                 <!-- select input -->
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" name="ecc">
                     <option value="L" selected>Low</option>
                     <option value="M">Medium</option>
                     <option value="Q">High</option>
@@ -73,9 +73,9 @@
 
             <!-- Format -->
             <div class="form-outline mb-4">
-                <label class="form-label" for="form1Example2">Format:</label>
+                <label class="form-label" for="format">Format:</label>
 
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" name="format">
                     <option value="png" selected>PNG</option>
                     <option value="gif">GIF</option>
                     <option value="jpeg">JPEG</option>
@@ -88,28 +88,19 @@
             <!-- color  -->
             <div class="mb-4 color">
                 <label class="form-label" for="color">Color</label>
-                <input type="color" value="#000000" />
+                <input type="color" name="color" value="#000000" />
                 
             </div>
 
             <!-- bg-color  -->
             <div class="mb-4 color">
                 <label class="form-label" for="bgcolor">Background Color</label>
-                <input type="color" value="#ffffff" />
+                <input type="color" name="bgcolor" value="#ffffff" />
             </div>
             
-            
-
-            
-
-            
-                
-               
-
+            <!-- Submit button -->
             <div class="mb-4">
-                <!-- Submit button -->
                 <button type="submit" class="btn btn-primary btn-block">Generate</button>
-                
             </div>
           
         </form>
