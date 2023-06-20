@@ -25,14 +25,8 @@ addEventListener("DOMContentLoaded", function() {
         // display image
         document.getElementById("qr-img").src = img_src;
 
-        // set image download link
-        document.getElementById("qr-link").href = img_src;
-
-        // show image
-        output = document.getElementById("output-div");
-        output.style.display = "block";
-
-      
+        document.getElementById("output-div").style.display = "block";
+        
         
 
     });
