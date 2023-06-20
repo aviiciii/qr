@@ -38,3 +38,12 @@ body{
     margin: 0 auto;
     text-align: center;
 }
+
+.download{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#output-div{
+    display: none;
+}
