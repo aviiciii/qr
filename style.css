@@ -48,6 +48,10 @@ body{
     display: none;
 }
 
+#generate{
+    background-color: #a5b8b5;
+}
+
 /* media queries */
 @media screen and (max-width: 768px){
     .form{
