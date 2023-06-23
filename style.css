@@ -34,14 +34,36 @@ body{
 .color{
     width: 100%;
     height: 40px;
+
+    /* center vertically */
+    display: flex;
+    align-items: center;
+    
 }
 
 .color input{
     height: 36px;
+    
+
 }
 
 .color label{
     margin-right: 10px;
+    margin-top: 6px;
+}
+
+
+.form-select{
+    background-color: transparent;
+}
+
+.form-control .form-outline:focus{
+    border-color: #a5b8b5;
+    box-shadow: none;
+}
+
+.form-outline:focus{
+    border-color: #a5b8b5;
 }
 
 
