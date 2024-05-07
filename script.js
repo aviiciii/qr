@@ -30,14 +30,12 @@ addEventListener("DOMContentLoaded", function() {
         document.getElementById("qr-result").innerHTML = "";
 
         if (img_format == "eps") {
-            // create download button
+            // download automatically
             var a = document.createElement("a");
             a.href = img_src;
-            a.download = "qr-code." + img_format;
-            a.innerHTML = "Download QR Code";
-            a.className = "btn btn-primary";
-            a.id = "download-btn";
-            document.getElementById("qr-result").appendChild(a);
+            a.download = "qr-code.eps";
+            a.click();
+            alert("QR Code downloaded as qrcode.eps");
         }
         else{
             var img = document.createElement("img");
@@ -46,9 +44,10 @@ addEventListener("DOMContentLoaded", function() {
             img.className = "img-fluid";
             img.id = "qr-img";
             document.getElementById("qr-result").appendChild(img);
+            // When the user clicks on the button, open the modal
+            modal.style.display = "block";
         }
-        // When the user clicks on the button, open the modal
-        modal.style.display = "block";
+        
 
     
         // When the user clicks on <span> (x), close the modal
